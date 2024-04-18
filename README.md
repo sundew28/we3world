@@ -1,6 +1,6 @@
-# Housemates Code Test
+# We3World Code Test
 
-An application to send API request and receive response as JSON. I have used laravel 10 framework to create the application and JWT to set up the authentication. In some API endpoints i have made use of implicit model binding for smoother and faster results.
+An application to send API request and receive response as JSON. I have used laravel 10 framework to create the application and JWT to set up the authentication.
 
 ## Requirements
 
@@ -14,7 +14,7 @@ An application to send API request and receive response as JSON. I have used lar
 Clone the repo to your working directory using your favorite CLI console (eg: GitBash, PowerShell, cmd or any of your choice) 
 
 ```bash
-$ git clone https://github.com/sundew28/housemates.git
+$ git clone https://github.com/sundew28/we3world.git
 ```
 
 Once you are done cloning the repo next would be to run composer in your console to install laravel framework dependencies by running the below composer command. Make sure you have composer installed
@@ -35,7 +35,7 @@ This would create all the basic tables to run your application smoothly. I have 
 
 ```php
 // User account
-   Email : admin@housemates.io
+   Email : admin@artlume.io
    Password : adminadmin
 ```
 
@@ -55,7 +55,7 @@ JWT_ALGO=HS256
 
 ## Testing the Application
 
-All API endpoints require a post/get/put/delete request to be made which is already made mandatory in the api route file for secure transfer of data.
+The API endpoint require a "get" request to be made which is already made mandatory in the api route file for secure transfer of data.
 
 ### Task 
 
