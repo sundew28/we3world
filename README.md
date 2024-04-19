@@ -31,7 +31,7 @@ will set up your database tables migraion and seeding and setting up your JWT se
 ```bash
 $ composer run setup
 ```
-This would create all the basic tables to run your application smoothly. I have created a basic user account for easy to use in this case.
+This would create all the basic tables to run your application smoothly. I have created a basic user account for easy to use in this case and populated the products table with dummy data for the purpose of testing.
 
 ```php
 // User account
@@ -76,7 +76,7 @@ Authorization --> Type (Select Bearer Token)
 ```
 ### API Endpoint
 
-1) GET <define your localhost with port/virtual domain>/api/products - grab minimum 5 products with their attributes. Returns a json response
+1) GET <define your localhost with port/virtual domain>/api/products - grab minimum 5 products with their attributes. Returns a json response. At this point i have implemented a method to return random 5 products from the products table.
 
     Response example
 
