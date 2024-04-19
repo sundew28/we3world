@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Rooms;
 
-class Properties extends Model
+class Products extends Model
 {
     use HasFactory;
 
@@ -18,14 +17,8 @@ class Properties extends Model
      */
     protected $fillable = [
         'name',
-        'address',
+        'code',
+        'price',
     ];
-
-    /**
-     * Get the rooms associated with the property.
-     */
-    public function rooms(): HasOne
-    {
-        return $this->hasOne(Rooms::class, 'property_id');
-    }
+    
 }

@@ -17,11 +17,11 @@ class UsersSeeder extends Seeder
          * Add Users
          *
          */
-        if (User::where('email', '=', 'admin@housemates.io')->first() === null) {
+        if (User::where('email', '=', 'admin@artlume.io')->first() === null) {
 
             $newUser = User::create([
-                'name' => 'HouseMates',
-                'email' => 'admin@housemates.io',
+                'name' => 'We3World',
+                'email' => 'admin@artlume.io',
                 'password' => bcrypt('adminadmin'),
             ]);
 

@@ -59,7 +59,7 @@ The API endpoint require a "get" request to be made which is already made mandat
 
 ### Task 
 
-The instructions were to call API end points through the console command. Listed like below after you login.
+The instructions were to call API end point to grab products.
 
 Login :
 
@@ -74,72 +74,55 @@ The API will return you with a secure token generated for use. Next you can use 
 ```
 Authorization --> Type (Select Bearer Token)
 ```
-### API Endpoints
+### API Endpoint
 
-1) POST <define your localhost with port/virtual domain>/api/property - create a new property
+1) GET <define your localhost with port/virtual domain>/api/products - grab minimum 5 products with their attributes. Returns a json response
 
-    Parameters required
-
-    ```bash
-    name
-    address
-    ```
-
-2) GET <define your localhost with port/virtual domain>/api/property - Fetch all properties.
-
-3) PUT <define your localhost with port/virtual domain>/api/property/{id} - Edit a specific property. This is set in a way to update the specific property
-
-    Parameters required
+    Response example
 
     ```bash
-    id
-    name
-    address
+    {
+        "id": 9,
+        "name": "brozkwwqfcmlwmnebhgu",
+        "code": "prod-1616",
+        "price": "686.06",
+        "created_at": "2024-04-18T12:43:24.000000Z",
+        "updated_at": "2024-04-18T12:43:24.000000Z"
+    },
+    {
+        "id": 1,
+        "name": "mnifzxnwaqabtwgtxuds",
+        "code": "prod-9216",
+        "price": "12.40",
+        "created_at": "2024-04-18T12:43:24.000000Z",
+        "updated_at": "2024-04-18T12:43:24.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "kplcxvhhnpbdtigluluu",
+        "code": "prod-5269",
+        "price": "906.26",
+        "created_at": "2024-04-18T12:43:24.000000Z",
+        "updated_at": "2024-04-18T12:43:24.000000Z"
+    },
+    {
+        "id": 5,
+        "name": "duoeargzorlvyplecfjd",
+        "code": "prod-0487",
+        "price": "681.44",
+        "created_at": "2024-04-18T12:43:24.000000Z",
+        "updated_at": "2024-04-18T12:43:24.000000Z"
+    },
+    {
+        "id": 10,
+        "name": "sgkcyyafaybeqawxtjxs",
+        "code": "prod-6547",
+        "price": "83.91",
+        "created_at": "2024-04-18T12:43:24.000000Z",
+        "updated_at": "2024-04-18T12:43:24.000000Z"
+    }
     ```
 
-4) DELETE <define your localhost with port/virtual domain>/api/property/{id} - Delete a specific property.
-
-    Parameters required
-
-    ```bash
-    id   
-    ```
-
-5) POST <define your localhost with port/virtual domain>/api/room - Create a new room for a property.
-
-    Parameters required
-
-    ```bash
-    property_id
-    name
-    size
-    ```
-
-6) GET <define your localhost with port/virtual domain>/api/room/{propertyId} - Fetch all rooms of a specific property.
-
-    Parameters required
-
-    ```bash
-    property_id    
-    ```
-
-7) PUT <define your localhost with port/virtual domain>/api/room/{id} - Edit a specific room.This is set in a way to update the specific room.
-    
-    Parameters required
-
-    ```bash
-    id
-    name
-    size
-    ```
-
-8) DELETE <define your localhost with port/virtual domain>/api/room/{id} - Delete a specific room.
-   
-   Parameters required
-
-    ```bash
-    id   
-    ```
 
 ## Improvements
 

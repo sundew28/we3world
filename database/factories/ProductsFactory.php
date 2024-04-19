@@ -2,15 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\Products;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Enums\CommonSizeEnum;
-use App\Models\Rooms;
-use App\Models\Properties;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Rooms>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Products>
  */
-class RoomsFactory extends Factory
+class ProductsFactory extends Factory
 {
 
     /**
@@ -19,7 +17,7 @@ class RoomsFactory extends Factory
      * @var string
      */
 
-    protected $model = Rooms::class;
+    protected $model = Products::class;
 
     /**
      * Define the model's default state.
@@ -27,11 +25,11 @@ class RoomsFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-    {
+    {        
         return [
-            'property_id' => Properties::all()->random()->id,
             'name' => $this->faker->lexify ('????????????????????'),
-            'size' => $this->faker->randomFloat(2).CommonSizeEnum::randomValue(),
+            'code' => $this->faker->numerify('prod-####'),
+            'price' => $this->faker->randomFloat(2,10, 1000),
         ];
     }
 }
