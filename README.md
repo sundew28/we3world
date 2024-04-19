@@ -123,14 +123,17 @@ Authorization --> Type (Select Bearer Token)
     }
     ```
 
+## Test case
+
+For running the test case just follow the command below in your console
+```bash
+php artisan test
+```
 
 ## Improvements
 
 - Would have added the frontend.
 - I would like to make improvement to the error capturing by making use of error handler in laravel, make use of JsonResponse error handling
 - Check the quality of code by using tools like PHPsniffer, PHP-CS-Fixer with PSR2 and Symfony standards (much extra checks, closer to Laravel than PSR2).
-- Writing unit tests and integration tests to ensure API functionality
-- Keep the code as simple as possible and following S.O.L.I.D princples.
-- Improving validation of inputs.
-- Leverage caching techniques to improve API response times like Redis or Memcached.
-- Enhancing API development with versioning, rate limiting, and request throttling features.
+- Writing unit tests and feature tests to ensure API functionality better. The current test is just basics.
+

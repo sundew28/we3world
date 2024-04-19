@@ -25,6 +25,12 @@ class UsersSeeder extends Seeder
                 'password' => bcrypt('adminadmin'),
             ]);
 
+            $newTestUser = User::create([
+                'name' => 'We3World',
+                'email' => 'test@artlume.io',
+                'password' => bcrypt('adminadmin'),
+            ]);
+
         }
     }
 }
